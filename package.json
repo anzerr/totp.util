@@ -1,0 +1,31 @@
+{
+	"name": "totp.util",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"linter": "eslint src/*",
+		"test": "npm run linter && node test.js"
+	},
+	"keywords": [],
+	"author": "anzerr",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
+	},
+	"eslintConfig": {
+		"extends": "eslint-config-basic"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:anzerr/totp.util.git"
+	},
+	"engines": {
+		"node": ">= 0.10.0"
+	},
+	"types": "index.d.ts",
+	"bugs": {
+		"url": "https://github.com/anzerr/totp.util/issues"
+	},
+	"homepage": "https://github.com/anzerr/totp.util#readme"
+}
