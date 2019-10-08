@@ -1,5 +1,5 @@
 
-const {Totp} = require('./index.js'),
+const {Totp} = require('../index.js'),
 	assert = require('assert');
 
 const data = [

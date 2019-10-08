@@ -11,7 +11,9 @@
 	"author": "anzerr",
 	"license": "MIT",
 	"devDependencies": {
-		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git",
+		"base.util": "git+https://github.com/anzerr/base.util.git",
+		"qr.util": "git+https://github.com/anzerr/qr.util.git"
 	},
 	"eslintConfig": {
 		"extends": "eslint-config-basic"
@@ -27,5 +29,8 @@
 	"bugs": {
 		"url": "https://github.com/anzerr/totp.util/issues"
 	},
-	"homepage": "https://github.com/anzerr/totp.util#readme"
+	"homepage": "https://github.com/anzerr/totp.util#readme",
+	"dependencies": {
+		"base.util": "git+https://github.com/anzerr/base.util.git"
+	}
 }

@@ -4,7 +4,7 @@
 ![GitHub Actions status | publish](https://github.com/anzerr/totp.util/workflows/publish/badge.svg)
 ![GitHub Actions status | test](https://github.com/anzerr/totp.util/workflows/test/badge.svg)
 
-Copy a directory or file to a location
+Totp util base on [rfc6238](https://tools.ietf.org/html/rfc6238) for two step authentication
 
 #### `Install`
 ``` bash
@@ -13,6 +13,7 @@ npm install --save @anzerr/totp.util
 ```
 
 ### `Example`
+Both examples works with [google authentication](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2). [Online example](https://anzerr.github.io/totp.util/) or a console version can be found in [test/example.js](https://github.com/anzerr/totp.util/blob/master/test/example.js)
 ``` javascript
 const {Totp} = require('totp.util');
 
