@@ -3,7 +3,6 @@ const {b32} = require('base.util'),
 	{Totp} = require('../index.js'),
 	Qr = require('qr.util');
 
-console.log(b32.decode('JBSWY3DPEHPK3PXP'));
 const gen = new Totp('12345678901234567890'), o = {
 	name: `totp.util${Math.random().toString(36)}`,
 	from: 'totp.util',
@@ -21,4 +20,4 @@ setInterval(() => {
 		last = cur;
 		console.log('current value: ', last);
 	}
-}, 200);
+}, 100);

@@ -13,7 +13,7 @@ npm install --save @anzerr/totp.util
 ```
 
 ### `Example`
-Both examples works with [google authentication](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2). [Online example](https://anzerr.github.io/totp.util/) or a console version can be found in [test/example.js](https://github.com/anzerr/totp.util/blob/master/test/example.js)
+Both examples works with [google authentication](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2). [Online example](https://anzerr.github.io/demo/#totp) or a console version can be found in [test/example.js](https://github.com/anzerr/totp.util/blob/master/test/example.js)
 ``` javascript
 const {Totp} = require('totp.util');
 
