@@ -1,36 +1,46 @@
 {
 	"name": "totp.util",
 	"version": "1.0.2",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"linter": "eslint src/*",
-		"test": "npm run linter && node test"
-	},
-	"keywords": [],
-	"author": "anzerr",
-	"license": "MIT",
-	"devDependencies": {
-		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git",
-		"base.util": "git+https://github.com/anzerr/base.util.git",
-		"qr.util": "git+https://github.com/anzerr/qr.util.git"
-	},
-	"eslintConfig": {
-		"extends": "eslint-config-basic"
+	"description": "Totp util base on rfc6238 for two step authentication",
+	"keywords": [
+		"2auth",
+		"authentication",
+		"google-authentication",
+		"hotp",
+		"node",
+		"rfc6238",
+		"time",
+		"totp",
+		"util"
+	],
+	"homepage": "https://github.com/anzerr/totp.util#readme",
+	"bugs": {
+		"url": "https://github.com/anzerr/totp.util/issues"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git@github.com:anzerr/totp.util.git"
 	},
-	"engines": {
-		"node": ">= 0.10.0"
-	},
+	"license": "MIT",
+	"author": "anzerr",
+	"main": "index.js",
 	"types": "index.d.ts",
-	"bugs": {
-		"url": "https://github.com/anzerr/totp.util/issues"
+	"scripts": {
+		"linter": "eslint src/*",
+		"test": "npm run linter && node test"
 	},
-	"homepage": "https://github.com/anzerr/totp.util#readme",
+	"eslintConfig": {
+		"extends": "eslint-config-basic"
+	},
 	"dependencies": {
 		"base.util": "git+https://github.com/anzerr/base.util.git"
+	},
+	"devDependencies": {
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git",
+		"base.util": "git+https://github.com/anzerr/base.util.git",
+		"qr.util": "git+https://github.com/anzerr/qr.util.git"
+	},
+	"engines": {
+		"node": ">= 0.10.0"
 	}
 }
