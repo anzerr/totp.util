@@ -3,19 +3,19 @@ declare namespace totp {
 
 	class Hotp {
 
-		key: string;
+		key: Buffer;
         constructor(key: string, hash?: string);
-		get(t: number, size?: number): string;
+		get(n: number, size?: number): string;
 		static generate(size?: number): Totp;
 
 	}
 
 	class Totp {
 
-		key: string;
+		key: Buffer;
 		constructor(key: string, hash?: string);
-		getTime(t: number, size?: number): string;
-		get(t?: {size?: number, next?: number}): string | string[];
+		getValue(n: number, size?: number): string;
+		get(options?: {size?: number, next?: number}): string | string[];
 		static generate(size?: number): Totp;
 
 	}

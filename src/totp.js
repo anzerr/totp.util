@@ -8,20 +8,20 @@ class Totp extends Hotp {
 		super(key, hash);
 	}
 
-	getTime(t, size) {
-		return super.get(Math.floor(t / 30), size);
+	getValue(n, size) {
+		return super.get(n, size);
 	}
 
 	get(options = {}) {
-		const {size, next} = options, now = Math.round(Date.now() / 1000);
+		const {size, next} = options, now = Math.floor(Math.round(Date.now() / 1000) / 30);
 		if (next) {
 			const out = [];
 			for (let i = 0; i < next; i++) {
-				out.push(this.getTime(now + i, size));
+				out.push(this.getValue(now + i, size));
 			}
 			return out;
 		}
-		return this.getTime(now, size);
+		return this.getValue(now, size);
 	}
 
 }

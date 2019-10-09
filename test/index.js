@@ -56,7 +56,7 @@ const data = [
 for (let i in data) {
 	for (let x in data[i].hash) {
 		let t = new Totp('12345678901234567890', x);
-		assert.equal(t.getTime(data[i].time, data[i].hash[x].length), data[i].hash[x]);
+		assert.equal(t.getValue(Math.floor(data[i].time / 30), data[i].hash[x].length), data[i].hash[x]);
 	}
 }
 
