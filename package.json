@@ -26,17 +26,12 @@
 	"main": "index.js",
 	"types": "index.d.ts",
 	"scripts": {
-		"linter": "eslint src/*",
 		"test": "npm run linter && node test"
-	},
-	"eslintConfig": {
-		"extends": "eslint-config-basic"
 	},
 	"dependencies": {
 		"base.util": "git+https://github.com/anzerr/base.util.git"
 	},
 	"devDependencies": {
-		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git",
 		"base.util": "git+https://github.com/anzerr/base.util.git",
 		"qr.util": "git+https://github.com/anzerr/qr.util.git"
 	},
