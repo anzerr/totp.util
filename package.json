@@ -1,6 +1,6 @@
 {
 	"name": "totp.util",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"description": "Totp util base on rfc6238 for two step authentication",
 	"keywords": [
 		"2auth",
